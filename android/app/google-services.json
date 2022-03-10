@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "634545130272",
+    "project_id": "konnectcart",
+    "storage_bucket": "konnectcart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634545130272:android:ba9d8716674897093f2545",
+        "android_client_info": {
+          "package_name": "com.konnectcart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "634545130272-t8vmudi1di2dfqldurihg2l6e2pujfe1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.konnectcart",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "634545130272-c82vjc5ore6ilkfl4kod85ik4brvqn4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf0MIv_LDaIWyalCUWRIQlM8fADJntofs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "634545130272-c82vjc5ore6ilkfl4kod85ik4brvqn4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

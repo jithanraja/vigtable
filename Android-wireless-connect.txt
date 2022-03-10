@@ -1,0 +1,41 @@
+Connect mobile device for wireless connectivity
+// Plug your mobile
+1. adb disconnect (or) adb kill-server // it will remove previous wireless connections
+2. adb devices // List all connected devices
+3. adb usb
+4. adb reverse tcp:8081 tcp:8081
+3. adb tcpip 5555
+4. adb connect <mobile_ip_address>:5555 // You can get mobile ip address from mobile settings
+    Note: You can check if your mobile address is correct by this command: ping <mobile address>
+// unplug your device
+5. adb devices // You can see your connected device
+
+Debug react-native app via Wireless:
+// Plug your mobile - For the first time installation
+1. react-native run-android
+2. After app run, Press "d" in metro command line in system (or) shake mobile twice to open developer menu
+3. click on the Dev Settings
+4. Click on Debug Server Host & port for the device and enter the system IP address and port 8081 (default port for React Native development server)
+    Ex: <IP_Address>:8081
+5. Now go back and click on Refresh Js which will run your App via Wi-Fi Connection (UNPLUG your USB)
+
+
+konnectcart\node_modules\@react-native-community\cli\node_modules\metro-cache\src\stableHash.js
+konnectcart\node_modules\metro\node_modules\metro-cache\src\stableHash.js
+konnectcart\node_modules\metro-cache\src\stableHash.js
+
+
+1. Register:
+    1.1: Name, Mail, Phone, Pwd get as input
+    1.2: using Mail and pwd create authentication in firebase
+    1.3: after creating authentication need to enter new entry in firestore with (Name, Mail, Phone, userId)
+
+2. Login:
+    Scenario 1: Mail id/Pwd
+        2.1.1: we can call firebase login directly
+    Scenario 2: Mobile/Pwd
+        2.2.1: First fetch the mailId from firestore by mobileno
+        2.2.2: And then we can make firebase login using fetched mail id and pwd.
+
+3. Google:
+    Firebase google login
